@@ -1,9 +1,11 @@
 package solution
 
-import (
-	"github.com/kyokomi/emoji"
+import "github.com/kyokomi/emoji"
+
+const (
+	message string = "Hello :world_map:!"
 )
 
 func GetMessage() string {
-	return emoji.Sprint("Hello :world_map:!")
+	return emoji.Sprint(message)
 }
